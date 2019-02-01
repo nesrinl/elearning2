@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Notifications : </title>
+</head>
+<body>
+	<h2>Notifications</h2>
+	<table>
+		<tr>
+			<th>id</th>
+			<th>Content</th>
+		</tr>
+		
+		<tr th:each="notification :${list_ofNotifications}">
+			<td th:text="${notification.id}">
+			<td th:text="${notification.content}">
+		</tr>
+
+	</table>
+</body>
+</html>
